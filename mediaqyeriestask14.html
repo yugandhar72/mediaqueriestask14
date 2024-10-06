@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myart</title>
+    <style>
+        
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000;
+  font-family: "Raleway";
+  line-height: 1.5;
+}
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 25px;
+  background-color: white;
+}
+a {
+  text-decoration: none;
+  font-size: 24px !important;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "art1  art2"
+    "art3  art4"
+    "art5 art4";
+}
+.art1 {
+  grid-area: art1;
+}
+.art {
+  grid-area: art2;
+}
+.art3 {
+  grid-area: art3;
+}
+.art4 {
+  grid-area: art4;
+}
+.art5 {
+  grid-area: art5;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 16px;
+  background-color: #f1f1f1 !important;
+}
+footer h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+footer img {
+  margin: 15px;
+  width: 300px;
+  height: 360px;
+}
+footer p {
+  margin: 10px 80px;
+  text-align: center;
+  font-size: 14px;
+}
+form p {
+  color: brown;
+  font-size: 18px;
+  margin: 10px 80px;
+}
+.ipt {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.inputform {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  width: 60%;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+button {
+  width: 60%;
+  height: 40px;
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+  margin-top: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  footer img {
+    width: 200px;
+    text-align: center;
+  }
+}
+
+    </style>
+</head>
+
+<body>
+    <nav class="topnav">
+        <a href="#">MYART</a>
+        <a href="#">About</a>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="art1"><img src="https://www.w3schools.com/w3images/streetart.jpg" alt="img1"></div>
+            <div class="art2"><img src="https://www.w3schools.com/w3images/streetart3.jpg" alt="img2"></div>
+            <div class="art3"><img src="https://www.w3schools.com/w3images/streetart2.jpg" alt="img3"></div>
+            <div class="art4"><img src="https://www.w3schools.com/w3images/streetart4.jpg" alt="img4"></div>
+            <div class="art5"><img src="https://www.w3schools.com/w3images/streetart5.jpg" alt="img5"></div>
+        </div>
+        <footer>
+            <div class="footer">
+                <h2>About</h2>
+                <div>
+                    <img src="https://www.w3schools.com/w3images/boy.jpg" alt="boyimg">-
+                </div>
+                <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest
+                    of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed
+                    tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non
+                    fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+                    ultricies congue gravida diam non fringilla.</p>
+                <form action="">
+                <p>Do not hesitate to contact me!</p>
+                <div class="inputform">
+                <div class="ipt">
+                    <label for="name"><b>Name</b></label><br>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="ipt">
+                    <label for="Email"><b>Email</b></label><br>
+                    <input type="email" name="Email" id="Email" required>
+                </div>
+                <div class="ipt">
+                    <label for="Message"><b>Message</b></label><br>
+                    <input type="text" id="message" name="message">
+                    <button type="submit">Send</button>
+                </div>
+                </form>
+                <p>
+                    Powered by <a href="#">YUZI&copy;2024</a>
+                </p>
+            </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
